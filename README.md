@@ -1,14 +1,15 @@
-# DT-EDA-Examples
+# RH Dynatrace Escape Room 101 Setup
 
-# This repo hosts the rulebooks and playbooks for Event Driven Ansible integration use cases with Dynatrace
+# This repo hosts instructions for Ansible/EDA and Dynatrace setup
 
 ## Prerequisites
 
-- OpenShift cluster with an account that has admin privileges
+- RHEL VM or OpenShift cluster with an account that has admin privileges
 - Ansible Automation Platform (AAP) and Event Driven Ansible (EDA) instances (requires AAP >= 2.4)
 
 ### Escape Room Lab Setup
-- For the Escape Room setup, you can provision the following RH Demo Platform catalog item: [Event-driven Ansible Demo](https://demo.redhat.com/catalog?item=babylon-catalog-prod/enterprise.event-driven-ansible.prod) OR provision your own Ansible and EDA instances
+- For the RH environment, you can provision the following RH Demo Platform catalog item: [Event-driven Ansible Demo](https://demo.redhat.com/catalog?item=babylon-catalog-prod/enterprise.event-driven-ansible.prod) OR provision your own Ansible and EDA instances
+- For the Dynatrace environment, please have access to a Dynatrace SaaS tenant. 
 
 ## Reference App Setup for Observability
 
