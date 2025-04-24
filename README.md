@@ -32,6 +32,16 @@ NOTE: The Dynatrace tenant and Ansible/EDA setup instructions in the following s
   - ![Screenshot 2024-10-25 at 3 35 33 PM](https://github.com/user-attachments/assets/750cc0c0-0482-4441-80e2-173935703824)
 
 
+### For Easytravel App
+
+- Web application detection
+  - ![Screenshot 2025-04-24 at 2 24 54 PM](https://github.com/user-attachments/assets/38237faf-505c-47c0-9dfa-327d705529e3)
+
+
+- Web application tagging
+
+- Web application user tagging for identiying user sessions by names
+
 ### For Easytrade App
 
 - Web application detection
