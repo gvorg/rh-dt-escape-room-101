@@ -36,6 +36,7 @@ NOTE: The Dynatrace tenant and Ansible/EDA setup instructions in the following s
 
 - Web application detection
   - ![Screenshot 2025-04-24 at 2 24 54 PM](https://github.com/user-attachments/assets/a02262da-38a2-4ac5-9db6-9cee7b7a30db)
+  - ![Screenshot 2025-04-24 at 2 32 13 PM](https://github.com/user-attachments/assets/7832c84e-936f-42d2-a672-0e5ebfc34934)
 
 
 
