@@ -23,38 +23,4 @@
                 dt_api_token: '{{ dt_token }}'
                 dt_api_url: '{{ dt_url }}'
     
-    - name: Problem payload Dynatrace for Easytrade Offer service slowdown
-      condition: event.status == "OPEN" and event.title == "Response time degradation" and event.impactedEntities[0].name == "easytrade_offer_service"
-      action:
-        run_job_template:
-          name: easytrade-slowdown-fix
-          organization: Default
-          job_args:
-              extra_vars:
-                dt_easytrade_url: '{{ et_url }}'
-                dt_api_token: '{{ dt_token }}'
-                dt_api_url: '{{ dt_url }}'
     
-    - name: Problem payload Dynatrace for Easytrade Account Service Memory limit issue
-      condition: event.status == "OPEN" and event.title == "Out-of-memory kills" and event.impactedEntities[0].name == "accountservice"
-      action:
-        run_job_template:
-          name: fix-easytrade-memory-contention
-          organization: Default
-          job_args:
-              extra_vars:
-                dt_easytrade_url: '{{ et_url }}'
-                dt_api_token: '{{ dt_token }}'
-                dt_api_url: '{{ dt_url }}'
-    
-    - name: Problem payload Dynatrace for Easytrade Credit Card Order Service Failure
-      condition: event.status == "OPEN" and (event.title == "JavaScript error rate increase" or event.title == "Failure rate increase") and (event.rootCauseEntity == "easytrade-demo" or event.rootCauseEntity == "OrderController")
-      action:
-        run_job_template:
-          name: redeploy-easytrade-credit-card-service
-          organization: Default
-          job_args:
-              extra_vars:
-                dt_easytrade_url: '{{ et_url }}'
-                dt_api_token: '{{ dt_token }}'
-                dt_api_url: '{{ dt_url }}'

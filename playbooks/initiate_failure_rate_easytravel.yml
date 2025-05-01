@@ -1,9 +1,0 @@
----
--
-  hosts: localhost
-  name: "Initiate Failure rate increase for Easytravel"
-  tasks:
-    
-    - name: Call easytrade DB service to apply configuration change
-      shell: "curl -X PUT '{{dt_easytravel_url}}//services/ConfigurationService/setPluginEnabled?name=LoginProblems&enabled=true' -H 'Content-Type: application/json' "
-

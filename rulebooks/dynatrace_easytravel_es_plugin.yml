@@ -1,0 +1,26 @@
+---
+- name: Listen for events
+  hosts: all
+  sources:
+    - dynatrace.event_driven_ansible.dt_esa_api:
+        dt_api_host: '{{ dt_url }}'
+        dt_api_token: '{{ dt_token }}'
+        delay: 15
+        # (Default is 1 min) i.e plugin runs every 1 minute
+  rules:
+    - name: Problem payload Dynatrace for App Failure rate increase issue
+      condition: |
+        event.title == "JavaScript error rate increase"
+      #  event.title is search("JavaScript error rate increase",ignorecase=true)
+      # condition: event.meta is defined
+      actions:
+        - run_job_template:
+            name: Dynatrace Easy Travel demo fix
+            organization: Default
+            job_args:
+              extra_vars:
+                dt_easytravel_url: '{{ et_url }}'
+                dt_api_token: '{{ dt_token }}'
+                dt_api_url: '{{ dt_url }}'
+        - debug:
+        - print_event:
