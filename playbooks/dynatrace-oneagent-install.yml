@@ -1,0 +1,16 @@
+---
+#
+# This playbook sets up dynatrace OneAgent on RHEL8 or RHEL9.
+# Note: This requires dynatrace.oneagent collection and
+#       dynatrace url and token.
+#
+- name: Install OneAgent
+  hosts: all
+  vars:
+    oneagent_environment_url:
+    oneagent_paas_token:
+  collections: [dynatrace.oneagent]
+  tasks:
+    - name: Dowload and istall OneAgent
+      import_role:
+        name: oneagent
