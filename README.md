@@ -69,7 +69,7 @@ NOTE: The Dynatrace tenant and Ansible/EDA setup instructions in the following s
 
 
 - Create EDA Token
-  - Refer to this [link](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-set-up-token#eda-set-up-token) for setting up an access token for EDA to access Ansible Automation Controller. NOTE: If you are using the [Event-driven Ansible Demo](https://demo.redhat.com/catalog?item=babylon-catalog-prod/enterprise.event-driven-ansible.prod catalog item on RH demo platform, this toekn is already setup for you.
+  - Refer to this [link](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-set-up-token#eda-set-up-token) for setting up an access token for EDA to access Ansible Automation Controller. NOTE: If you are using the [Event-driven Ansible Demo](https://demo.redhat.com/catalog?item=babylon-catalog-prod/enterprise.event-driven-ansible.prod catalog item on RH demo platform, this token is already setup for you.
 
 - Create Project
   - ![aap_project](https://github.com/user-attachments/assets/c117575a-8b94-4a40-af50-1edbe6cb9aed)
