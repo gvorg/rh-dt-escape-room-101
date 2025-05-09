@@ -4,7 +4,7 @@
 # After you run this, browse to the control page at http://<hostname>:8094
 # and start given scenario.
 #
-# The customer fronteds are e.g. http://<hostname>:9080
+# The customer frontend is e.g. http://<hostname>:9080
 # depending on scenario. Could be also ports 8079,8080,9080
 #
 # Setup requires host is subscribed to Red Hat. If you run CentOS stream
