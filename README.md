@@ -102,6 +102,8 @@ The Ansible EDA setup currently only refers to the [Dynatrace Event Source Plugi
 
 
 ## Problem Scenario Setup for Easytravel
+
+Reference link to Problem Patterns that can be generated for Easytravel: [https://community.dynatrace.com/t5/Start-with-Dynatrace/Available-easyTravel-problem-patterns/m-p/181674]
 1. First you need to have the website started http://<easytravel URL>:8094/main -> UEM -> standard 
 2. Login to EasyTravel web shop using different credentials in private browser tab, and purchase trips to create some sessions. Always close the browser tab to make the session end after each purchase. Credentials are e.g. bian/bian, alex/alex, anna/anna, fa/fa, demi/demi http://<easytravel URL>:9079/easytravel/home
 3. Use AAP job template to break the easytravel website
