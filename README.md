@@ -100,3 +100,12 @@ The Ansible EDA setup currently only refers to the [Dynatrace Event Source Plugi
   -  ![eda_rulebook_1](https://github.com/user-attachments/assets/226d4da9-c54c-4246-9a51-6f7be7f7cb96)
   -  ![eda_rulebook_2](https://github.com/user-attachments/assets/4e26616c-9a8e-427a-8cfd-8cdd94df03bb)
 
+
+## Problem Scenario Setup for Easytravel
+1. First you need to have the website started http://<easytravel URL>:8094/main -> UEM -> standard 
+2. Login to EasyTravel web shop using different credentials in private browser tab, and purchase trips to create some sessions. Always close the browser tab to make the session end after each purchase. Credentials are e.g. bian/bian, alex/alex, anna/anna, fa/fa, demi/demi http://<easytravel URL>:9079/easytravel/home
+3. Use AAP job template to break the easytravel website
+4. Login as maria/maria and make purchase fail in webshop, and make sure there is trace in jobs that AAP fixed it. You probably need to hit the purchase button tens of times quickly to make the dynatrace raise the problem. It often takes some minutes for DT to raise the problem report
+5. Ensure from AAP logs EDA & AAP fixed the website.
+This is mandatory, participants are hunting for these traces
+
