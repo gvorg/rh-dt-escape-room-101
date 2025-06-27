@@ -6,6 +6,7 @@
 
 - RHEL VM or OpenShift cluster with an account that has admin privileges
 - Ansible Automation Platform (AAP) and Event Driven Ansible (EDA) instances (requires AAP >= 2.4)
+- Access to a Dynatrace tenant
 
 ### Escape Room Lab Setup
 - For the RH environment, you can provision the following RH Demo Platform catalog item: [Event-driven Ansible Demo](https://demo.redhat.com/catalog?item=babylon-catalog-prod/enterprise.event-driven-ansible.prod) OR provision your own Ansible and EDA instances
