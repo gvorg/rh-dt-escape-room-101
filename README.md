@@ -18,7 +18,7 @@
 We have 2 options for deploying a reference app that can be used for Dynatrace observability and simulating problem events that can be detected by Dynatrace.
 NOTE: The Dynatrace tenant and Ansible/EDA setup instructions in the following sections are using Easytrade as the reference app but they apply to the Easytravel app as well.
 
-- Set up Easytravel app on RHEL VM
+- Set up Easytravel app on RHEL VM/EC2 Instance
   1. [Deploy](https://docs.dynatrace.com/docs/shortlink/oneagent-linux-install) Dynatrace OneAgent 
   2. Here's a [guide](https://community.dynatrace.com/t5/Start-with-Dynatrace/easyTravel-Documentation-and-Download/m-p/181271) for deploying the Easytravel app on RHEL
   3. Alternatively, you can also refer to the [OneAgent](https://github.com/gvorg/rh-dt-escape-room-101/blob/main/playbooks/dynatrace-oneagent-install.yml) and [Easytravel](https://github.com/gvorg/rh-dt-escape-room-101/blob/main/playbooks/easytravel-install.yml) install playbooks in this repo to automate the process via Ansible
