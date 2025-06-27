@@ -4,7 +4,8 @@
 
 ## Prerequisites
 
-- RHEL VM or OpenShift cluster with an account that has admin privileges
+- For EasyTravel app - RHEL VM or EC2 instance (or similar on Azure/GCP) for EasyTravel app
+- For EasyTrade setup - OpenShift cluster with an account that has admin privileges
 - Ansible Automation Platform (AAP) and Event Driven Ansible (EDA) instances (requires AAP >= 2.4)
 - Access to a Dynatrace tenant
 
