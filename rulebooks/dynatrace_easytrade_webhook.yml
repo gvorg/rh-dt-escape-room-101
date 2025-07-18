@@ -12,7 +12,6 @@
     - name: Problem payload Dynatrace for DB Failure rate increase issue
       condition: 
         all:
-          - event.payload.eventData.problemStatus == "OPEN"
           - event.payload.eventData.problemTitle == "Request error rate increase"
       action:
         run_job_template:
