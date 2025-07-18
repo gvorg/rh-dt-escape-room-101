@@ -9,6 +9,11 @@
         token: '{{ var_eda_token }}' 
 
   rules:
+    - name: Print all events
+      condition: true
+      action:
+      debug:
+
     - name: Problem payload Dynatrace for DB Failure rate increase issue
       condition: event.payload.eventData.problemStatus == "OPEN" and (event.payload.eventData.problemTitle == "Failure rate increase" or event.payload.eventData.problemTitle == "Request error rate increase")
       action:
