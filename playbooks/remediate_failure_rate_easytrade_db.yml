@@ -8,8 +8,8 @@
         var: ansible_eda
     - name: Print Dynatrace ProblemId
       debug:
-        msg: "{{ ansible_eda.event.payload.eventData.eventId }}"
-      when: ansible_eda.event.payload.eventData.problemStatus == "OPEN"
+        msg: "{{ ansible_eda.m_1.events.payload.eventData.eventId }}"
+      when: ansible_eda.m_1.events.payload.eventData.problemStatus == "OPEN"
 
     - name: Post comment to Dynatrace - triggered playbook
       shell: "curl -X POST --header 'Authorization: Api-Token {{dt_api_token}}' -H 'Content-Type: application/json' -d '{\"message\": \"Ansible EDA controller-Triggered Ansible playbook to resolve Failure rate increase problem\"}' {{dt_api_url}}/api/v2/problems/{{ansible_eda.event.payload.eventData.eventId}}/comments"
