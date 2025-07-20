@@ -3,6 +3,9 @@
   hosts: localhost
   name: easytrade-fix-webhook
   tasks:
+    - name: Print incoming payload
+      debug:
+        var: ansible_eda
     - name: Print Dynatrace ProblemId
       debug:
         msg: "{{ ansible_eda.event.payload.eventData.eventId }}"
