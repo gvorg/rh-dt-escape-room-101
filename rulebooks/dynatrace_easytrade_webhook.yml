@@ -10,7 +10,10 @@
 
   rules:
     - name: Problem payload Dynatrace for DB Failure rate increase issue
-      condition: events.m_1.payload.eventData.problemTitle == "Failure rate increase"
+      condition: 
+        all:
+          - events.m_1.payload.eventData.problemStatus == "OPEN"
+          - events.m_1.payload.eventData.problemTitle == "Failure rate increase"
       action:
         run_job_template:
           name: easytrade-fix-webhook
