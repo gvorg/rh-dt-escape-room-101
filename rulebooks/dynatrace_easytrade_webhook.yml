@@ -11,7 +11,7 @@
   rules:
     - name: Problem payload Dynatrace for DB Failure rate increase issue
       condition:
-        all:
+        any:
           - events.m_1.payload.eventData.problemStatus == "OPEN"
           - events.m_1.payload.eventData.problemTitle == "Failure rate increase"
       action:
